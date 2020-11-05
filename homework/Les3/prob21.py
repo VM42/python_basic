@@ -6,8 +6,8 @@ def my_div(arg_1, arg_2):
 
     try:
         result = arg_1 / arg_2
-    except arg_1 == 0:
-        return "Nah, you can't divide nothing"
+    except ZeroDivisionError:
+        return print("Nah, you can't  divide by nothing")
 
     return print(result)
 
